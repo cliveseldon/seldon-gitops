@@ -1,0 +1,25 @@
+{
+    "kind": "SeldonDeployment",
+    "apiVersion": "machinelearning.seldon.io/v1",
+    "metadata": {
+        "name": "test-iris-sklearn",
+        "namespace": "seldon",
+        "creationTimestamp": null
+    },
+    "spec": {
+        "predictors": [
+            {
+                "name": "default",
+                "graph": {
+                    "name": "model",
+                    "implementation": "SKLEARN_SERVER",
+                    "modelUri": "gs://seldon-models/sklearn/iris"
+                },
+                "replicas": 1,
+                "engineResources": {},
+                "svcOrchSpec": {}
+            }
+        ]
+    },
+    "status": {}
+}
