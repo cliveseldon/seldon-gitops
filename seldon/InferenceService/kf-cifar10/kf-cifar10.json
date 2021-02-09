@@ -32,13 +32,6 @@
                 "logger": {
                     "mode": "all"
                 }
-            },
-            "explainer": {
-                "alibi": {
-                    "type": "AnchorImages",
-                    "storageUri": "gs://seldon-models/tfserving/cifar10/explainer-py36-0.5.2",
-                    "resources": {}
-                }
             }
         }
     },
